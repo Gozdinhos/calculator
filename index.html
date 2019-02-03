@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <form>
+      <input type="text" class="screen" id= "display">
+      </form>
+      <div class="buttons">
+        <!--yellow buttons -->
+        <button type="button" id="multiply" onclick="multiplication()" class="btn btn-yellow" name="button">*</button>
+        <button type="button" id="divide" onclick="division()" class="btn btn-yellow" name="button">/</button>
+        <button type="button" id="substract" onclick="substraction()" class="btn btn-yellow" name="button">-</button>
+        <button type="button" id="add" onclick="addition()" class="btn btn-yellow" name="button">+</button>
+        <!--grey buttons -->
+        <button type="button" id="dot" onclick="dot()" class="btn btn-grey" name="button">.</button>
+        <button type="button" id="nine" onclick="pressNumber(9)"  class="btn btn-grey" name="button">9</button>
+        <button type="button" id="eight" onclick="pressNumber(8)" class="btn btn-grey" name="button">8</button>
+        <button type="button" id="seven" onclick="pressNumber(7)"  class="btn btn-grey" name="button">7</button>
+        <button type="button" id="six" onclick="pressNumber(6)" class="btn btn-grey" name="button">6</button>
+        <button type="button" id="five" onclick="pressNumber(5)" class="btn btn-grey" name="button">5</button>
+        <button type="button" id="four" onclick="pressNumber(4)" class="btn btn-grey" name="button">4</button>
+        <button type="button" id="three" onclick="pressNumber(3)" class="btn btn-grey" name="button">3</button>
+        <button type="button" id="two" onclick="pressNumber(2)" class="btn btn-grey" name="button">2</button>
+        <button type="button" id="one" onclick="pressNumber(1)" class="btn btn-grey" name="button">1</button>
+        <button type="button" id="zero" onclick="pressNumber(0)" class="btn btn-grey" name="button">0</button>
+        <button type="button" id="equal" onclick="equalization()" class="btn-equal btn-yellow" name="button">=</button>
+        <button type="button" id="percent" onclick="percent()" class="btn-percent btn-yellow" name="button">%</button>
+        <button type="button" id="modular" onclick="mod()" class="btn-modular btn-yellow" name="button">mod</button>
+        <button type="button" id="pi" onclick="pi()" class="btn-pi btn-yellow" name="button">π</button>
+        <button type="button" id="clear" onclick="clearify()" class="btn-clear btn-yellow" name="button">C</button>
+      </div>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
